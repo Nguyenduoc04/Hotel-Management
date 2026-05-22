@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/guest.css" />
+    <link rel="stylesheet" href="./assets/main.css">
+    <link rel="stylesheet" href="./assets/room.css">
+    <link rel="stylesheet" href="./assets/icon/themify-icons/themify-icons.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <title>HMS</title>
+  </head>
+  <body>
+    <nav>
+      <div class="nav__logo">HoMS</div>
+      <ul class="nav__links s">
+        <li class="link"><a href="#home">Home</a></li>
+        <li class="link"><a href="#hotels">Book</a></li>
+        <li class="link"><a href="#blog">Blog</a></li>
+        <li class="link"><a href="#contact">Contact Us</a></li>
+      </ul>
+      <div class="nav__user-container">
+        <div class="nav__user-menu">
+          <button id="userMenuBtn" class="nav__user-btn">
+            <i class="ri-user-line"></i>
+            <span id="userMenuText">Sign In</span>
+            <i class="ri-arrow-down-s-line dropdown-arrow" style="display: none;"></i>
+          </button>
+          <div id="userMenuDropdown" class="nav__user-dropdown">
+            <div class="dropdown-header">
+              <span id="dropdownUsername">User</span>
+              <span id="dropdownRole" class="role-badge">Role</span>
+            </div>
+            <hr class="dropdown-divider">
+            <a href="/dashboard" id="dashboardLink" class="dropdown-item">
+              <i class="ri-dashboard-line"></i> Dashboard
+            </a>
+            <button id="profileBtn" class="dropdown-item">
+              <i class="ri-user-settings-line"></i> Account Settings
+            </button>
+            <button id="logoutBtn" class="dropdown-item logout-btn">
+              <i class="ri-logout-box-r-line"></i> Log Out
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <header id="home" class="section__container header__container">
+      <div class="header__image__container">
+        <div class="header__content">
+          <h1>The Best Booking Website</h1>
+          <p>Start booking and enjoy our good services at lowest price.</p>
+        </div>
+      </div>
+    </header>
+
+    <section id="hotels" class="section__container popular__container">
+      <h2 class="section__header">Popular Hotels</h2>
+      <div class="popular__grid">
+        <div class="popular__card openModal" data-target="#thisModal">
+          <img src="../static/assets/img/hotel-1.jpg" alt="popular hotel" />
+          <div class="popular__content">
+            <div class="popular__card__header">
+              <h4>The Plaza Hotel</h4>
+              <h4>$499</h4>
+            </div>
+            <p>New York City, USA</p>
+          </div>
+        </div>
+        <div class="popular__card openModal" data-target="#thisModal">
+          <img src="../static/assets/img/hotel-2.jpg" alt="popular hotel" />
+          <div class="popular__content">
+            <div class="popular__card__header">
+              <h4>Ritz Paris</h4>
+              <h4>$549</h4>
+            </div>
+            <p>Paris, France</p>
+          </div>
+        </div>
+        <div class="popular__card openModal" data-target="#thisModal">
+          <img src="../static/assets/img/hotel-3.jpg" alt="popular hotel" />
+          <div class="popular__content">
+            <div class="popular__card__header">
+              <h4>The Peninsula</h4>
+              <h4>$599</h4>
+            </div>
+            <p>Hong Kong</p>
+          </div>
+        </div>
+        <div class="popular__card openModal" data-target="#thisModal">
+          <img src="../static/assets/img/hotel-4.jpg" alt="popular hotel" />
+          <div class="popular__content">
+            <div class="popular__card__header">
+              <h4>Atlantis The Palm</h4>
+              <h4>$449</h4>
+            </div>
+            <p>Dubai, United Arab Emirates</p>
+          </div>
+        </div>
+        <div class="popular__card openModal" data-target="#thisModal">
+          <img src="../static/assets/img/hotel-5.jpg" alt="popular hotel" />
+          <div class="popular__content">
+            <div class="popular__card__header">
+              <h4>The Ritz-Carlton</h4>
+              <h4>$649</h4>
+            </div>
+            <p>Tokyo, Japan</p>
+          </div>
+        </div>
+        <div class="popular__card openModal" data-target="#thisModal">
+          <img src="../static/assets/img/hotel-6.jpg" alt="popular hotel" />
+          <div class="popular__content">
+            <div class="popular__card__header">
+              <h4>Marina Bay Sands</h4>
+              <h4>$549</h4>
+            </div>
+            <p>Singapore</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="blog" class="client">
+      <div class="section__container client__container">
+        <h2 class="section__header">What our client say</h2>
+        <div class="client__grid">
+          <div class="client__card">
+            <img src="/assets/img/client-1.jpg" alt="client" />
+            <p>
+              The booking process was seamless, and the confirmation was
+              instant. I highly recommend WDM&Co for hassle-free hotel bookings.
+            </p>
+          </div>
+          <div class="client__card">
+            <img src="/assets/img/client-2.jpg" alt="client" />
+            <p>
+              The website provided detailed information about hotel, including
+              amenities, photos, which helped me make an informed decision.
+            </p>
+          </div>
+          <div class="client__card">
+            <img src="/assets/img/client-3.jpg" alt="client" />
+            <p>
+              I was able to book a room within minutes, and the hotel exceeded
+              my expectations. I appreciate WDM&Co's efficiency and reliability.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section__container">
+      <div class="reward__container">
+        <h4>Join rewards and discover amazing discounts on your booking</h4>
+      </div>
+    </section>
+
+    <footer id="contact" class="footer">
+      <div class="section__container footer__container">
+        <div class="footer__col">
+          <h3>WDM&Co</h3>
+          <p>
+            HoMS is a modern hospitality platform that brings travelers a convenient and enjoyable way to explore
+            and book accommodations across the globe.
+          </p>
+          <p>
+            With a user-friendly interface and a vast selection of hotels,
+            WDM&Co aims to provide a stress-free experience for travelers
+            seeking the perfect stay.
+          </p>
+        </div>
+        <div class="footer__col">
+          <h4>Company</h4>
+          <p>About Us</p>
+          <p>Our Team</p>
+          <p>Blog</p>
+          <p>Book</p>
+          <p>Contact Us</p>
+        </div>
+        <div class="footer__col">
+          <h4>Legal</h4>
+          <p>FAQs</p>
+          <p>Terms & Conditions</p>
+          <p>Privacy Policy</p>
+        </div>
+        <div class="footer__col">
+          <h4>Resources</h4>
+          <p>Social Media</p>
+          <p>Help Center</p>
+          <p>Partnerships</p>
+        </div>
+      </div>
+      <div class="footer__bar">
+        Copyright © 2023 Web Design Mastery. All rights reserved.
+      </div>
+    </footer>
+    <!-- Modal add client -->
+    <div class="modal" id="thisModal">
+        <div class="modal__overlay"></div>
+        <div class="modal__body add-client">
+            <div class="add-client__form assign-room">
+                <div class="add-client__header">
+                    <div class="header-text">
+                        <h1 id="modalName">Hotel</h1>
+                    </div>
+                    <div class="close-button closeModal">
+                        <i class="material-icons">close</i>
+                    </div>
+                </div>
+                <div class="sub-header-text">
+                    <h3>Fill In The Form Below</h3>
+                </div>
+                <div class="contact-input assign-room">
+                    <div class="input-container">
+                        <h3>Checked-In</h3>
+                        <div class="input-layout guest ">
+                            <i class="material-icons">event</i>
+                            <input type="date" class="auth-form__input client" placeholder="Enter name">
+                        </div>
+                    </div> 
+                    <div class="input-container">
+                        <h3>Check Out</h3>
+                        <div class="input-layout guest">
+                            <i class="material-icons">event_busy</i>
+                            <input type="date" class="auth-form__input client" placeholder="Enter name">
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-input assign-room">
+                    <div class="input-container">
+                        <h3>Customer Name</h3>
+                        <div class="input-layout guest">
+                            <i class="material-icons">person</i>
+                            <input type="text" class="auth-form__input client" placeholder="Enter name">
+                        </div>
+                    </div>
+                    <div class="input-container select-menu">
+                        <h3>Room Type</h3>
+                        <div class="input-layout guest select-menu">
+                            <span class="text">Select your option</span>
+                            <i class="material-icons">arrow_drop_down</i>
+                            <ul class="options">
+                                <li class="option">
+                                    <span class="option-text">Single Room</span>
+                                </li>
+                                <li class="option">
+                                    <span class="option-text">Deluxe Room</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="input-container">
+                    <h3>Note(*)</h3>
+                    <div class="input-layout guest">
+                        <i class="material-icons">edit_square</i>
+                        <input type="text" class="auth-form__input client" placeholder="Enter name">
+                    </div>
+                </div>
+                <button class="auth__button add-client">Confirm</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Profile / Account Settings -->
+    <div class="modal" id="profileModal">
+        <div class="modal__overlay"></div>
+        <div class="modal__body add-client">
+            <div class="add-client__form assign-room">
+                <div class="add-client__header">
+                    <div class="header-text">
+                        <h1>Account Settings</h1>
+                    </div>
+                    <div class="close-button closeModal">
+                        <i class="material-icons">close</i>
+                    </div>
+                </div>
+                <div class="sub-header-text">
+                    <h3>View or update your account details</h3>
+                </div>
+                <div class="contact-input assign-room" style="display: flex; gap: 20px;">
+                    <div class="input-container" style="flex: 1;">
+                        <h3>Username</h3>
+                        <div class="input-layout guest">
+                            <i class="material-icons">person</i>
+                            <input type="text" id="profileUsername" class="auth-form__input client" placeholder="Username">
+                        </div>
+                    </div>
+                    <div class="input-container" style="flex: 1;">
+                        <h3>Email</h3>
+                        <div class="input-layout guest">
+                            <i class="material-icons">email</i>
+                            <input type="email" id="profileEmail" class="auth-form__input client" placeholder="Email">
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-input assign-room" style="display: flex; gap: 20px; margin-top: 15px;">
+                    <div class="input-container" style="flex: 1;">
+                        <h3>New Password (optional)</h3>
+                        <div class="input-layout guest">
+                            <i class="material-icons">lock</i>
+                            <input type="password" id="profilePassword" class="auth-form__input client" placeholder="New Password">
+                        </div>
+                    </div>
+                    <div class="input-container" style="flex: 1;">
+                        <h3>Role</h3>
+                        <div class="input-layout guest" style="background-color: #f3f4f6; opacity: 0.8;">
+                            <i class="material-icons">admin_panel_settings</i>
+                            <input type="text" id="profileRole" class="auth-form__input client" readonly disabled style="cursor: not-allowed;">
+                        </div>
+                    </div>
+                </div>
+                <button id="saveProfileBtn" class="auth__button add-client" style="margin-top: 20px; width: 100%;">Save Changes</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
