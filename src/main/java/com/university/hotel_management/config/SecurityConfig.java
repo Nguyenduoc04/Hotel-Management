@@ -1,6 +1,6 @@
 package com.university.hotel_management.config;
 
-import com.university.hotel_management.repostory.AccountRepository;
+import com.university.hotel_management.repository.AccountRepository;
 import com.university.hotel_management.model.Account;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

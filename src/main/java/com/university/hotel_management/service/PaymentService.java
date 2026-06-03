@@ -3,8 +3,8 @@ package com.university.hotel_management.service;
 import com.university.hotel_management.dto.PaymentDTO;
 import com.university.hotel_management.model.Payment;
 import com.university.hotel_management.model.Reservation;
-import com.university.hotel_management.repostory.PaymentRepository;
-import com.university.hotel_management.repostory.ReservationRepository;
+import com.university.hotel_management.repository.PaymentRepository;
+import com.university.hotel_management.repository.ReservationRepository;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 

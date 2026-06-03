@@ -1,4 +1,4 @@
-package com.university.hotel_management.repostory;
+package com.university.hotel_management.repository;
 
 import com.university.hotel_management.model.Guest;
 import org.springframework.data.jpa.repository.JpaRepository;

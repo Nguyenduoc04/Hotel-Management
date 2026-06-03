@@ -2,7 +2,7 @@ package com.university.hotel_management.service;
 
 import com.university.hotel_management.dto.ReservationRoomDTO;
 import com.university.hotel_management.model.ReservationRoom;
-import com.university.hotel_management.repostory.ReservationRoomRepository;
+import com.university.hotel_management.repository.ReservationRoomRepository;
 import org.springframework.stereotype.Service;
 
 import java.util.List;

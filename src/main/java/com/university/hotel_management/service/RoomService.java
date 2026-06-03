@@ -4,9 +4,9 @@ import com.university.hotel_management.dto.RoomDTO;
 import com.university.hotel_management.model.Hotel;
 import com.university.hotel_management.model.Room;
 import com.university.hotel_management.model.RoomType;
-import com.university.hotel_management.repostory.HotelRepository;
-import com.university.hotel_management.repostory.RoomRepository;
-import com.university.hotel_management.repostory.RoomTypeRepository;
+import com.university.hotel_management.repository.HotelRepository;
+import com.university.hotel_management.repository.RoomRepository;
+import com.university.hotel_management.repository.RoomTypeRepository;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 

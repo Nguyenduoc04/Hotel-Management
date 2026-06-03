@@ -4,9 +4,9 @@ import com.university.hotel_management.dto.EmployeeDTO;
 import com.university.hotel_management.model.Account;
 import com.university.hotel_management.model.Employee;
 import com.university.hotel_management.model.Hotel;
-import com.university.hotel_management.repostory.AccountRepository;
-import com.university.hotel_management.repostory.EmployeeRepository;
-import com.university.hotel_management.repostory.HotelRepository;
+import com.university.hotel_management.repository.AccountRepository;
+import com.university.hotel_management.repository.EmployeeRepository;
+import com.university.hotel_management.repository.HotelRepository;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 

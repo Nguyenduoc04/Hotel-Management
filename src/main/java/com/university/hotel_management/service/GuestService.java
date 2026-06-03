@@ -2,8 +2,8 @@ package com.university.hotel_management.service;
 
 import com.university.hotel_management.model.Account;
 import com.university.hotel_management.model.Guest;
-import com.university.hotel_management.repostory.AccountRepository;
-import com.university.hotel_management.repostory.GuestRepository;
+import com.university.hotel_management.repository.AccountRepository;
+import com.university.hotel_management.repository.GuestRepository;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 

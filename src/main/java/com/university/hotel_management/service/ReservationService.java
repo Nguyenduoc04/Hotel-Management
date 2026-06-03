@@ -3,7 +3,7 @@ package com.university.hotel_management.service;
 import com.university.hotel_management.dto.ReservationDTO;
 import com.university.hotel_management.dto.ReservationRoomDTO;
 import com.university.hotel_management.model.*;
-import com.university.hotel_management.repostory.*;
+import com.university.hotel_management.repository.*;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
