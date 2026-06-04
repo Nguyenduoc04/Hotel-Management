@@ -173,8 +173,8 @@
 .dashboard__item{
     display: flex;
     align-items: center;
-    padding: 18px 28px;
-    gap: 20px;
+    padding: 18px 120px;
+    gap: 10px;
     justify-content: center;
     background-color: #fff;
     border-radius: var(--card-border-radius);
@@ -261,7 +261,7 @@
 
 .dashboard__item h3{
     margin-top: 1rem;
-    font-size: 1.2rem;
+    font-size: 2rem;
     color: var(--text-dark);
     font-weight: var(--text-black);
 }

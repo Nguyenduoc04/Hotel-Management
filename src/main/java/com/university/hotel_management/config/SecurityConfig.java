@@ -64,6 +64,12 @@ public class SecurityConfig {
             .csrf(csrf -> csrf.disable())
             .sessionManagement(session -> session.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
             .authorizeHttpRequests(auth -> auth
+                // Restrict employee and account management to ADMIN
+                .requestMatchers("/api/employees/**").hasRole("ADMIN")
+                .requestMatchers(HttpMethod.GET, "/api/accounts").hasRole("ADMIN")
+                .requestMatchers(HttpMethod.POST, "/api/accounts").hasRole("ADMIN")
+                .requestMatchers(HttpMethod.DELETE, "/api/accounts/**").hasRole("ADMIN")
+
                 // Public pages (Thymeleaf HTML templates)
                 .requestMatchers("/", "/login", "/home", "/dashboard", "/client", "/hotels", "/reservation",
                                  "/setting", "/payment", "/room/**").permitAll()

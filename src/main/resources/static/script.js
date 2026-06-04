@@ -23,6 +23,22 @@ document.addEventListener("DOMContentLoaded", () => {
                 return;
             }
         }
+
+        // Hide setting link from navigation if not ADMIN
+        if (role !== "ADMIN") {
+            document.querySelectorAll(".nav__links-item").forEach(item => {
+                const link = item.querySelector("a");
+                if (link && link.getAttribute("href") === "/setting") {
+                    item.remove();
+                }
+            });
+        }
+
+        // Block non-ADMIN from accessing /setting
+        if (currentPath === "/setting" && role !== "ADMIN") {
+            window.location.href = "/dashboard";
+            return;
+        }
     }
 
     // Set active nav link highlighting
